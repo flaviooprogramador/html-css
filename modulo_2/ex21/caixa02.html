@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Bad+Script&family=Bungee&family=Josefin+Sans:wght@100&display=swap');
+        body{
+            font-family: 'Bungee', cursive;
+            color: rgb(0, 0, 0);
+            background-color: rgb(199, 136, 136);
+        }
+        header{
+            background-color: azure;
+            padding: 10px;
+            margin: 20px;
+        }
+        h1 {
+            box-shadow: 1px 1px 1px black;
+        }
+        nav{
+            background-color: indianred;
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+           
+        }
+        nav > a {
+            text-decoration: none;
+            color: aqua;
+            font-weight: bold;
+
+        }
+
+        nav > a:hover{
+            text-decoration: none;
+            color: wheat;
+            font-weight: bold;
+            margin-right: 30px;
+
+        }
+        main{
+            background-color: azure;
+            padding: 10px;
+            margin:  20px;
+            border-radius: 20px;
+
+        }
+         
+        article{
+            background-color: rgb(208, 245, 0);
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(243, 22, 70);
+            padding: 5px;
+        }
+
+        footer{ 
+            background-color: rgb(119, 0, 255);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin: 35px;
+            padding: 1px;
+        }
+       footer > p:hover{
+        text-decoration:overline;
+            color: rgb(0, 0, 0);
+            font-weight: 800;
+            margin-right: 600px;
+       }
+       div#bola{
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        background-color: aliceblue;
+        border-radius: 50%;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>meu site</h1>
+        <nav>
+            <a href="#">linkzinho </a>
+            <a href="#">linkzinho </a>
+            <a href="#">linkzinho </a>
+            <a href="#">linkzinho </a>
+            <a href="#">linkzinho </a>
+            <a href="#">linkzinho </a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+       
+        <section id="noticias">
+            <article>
+
+            </article>
+            <h2>notica sobre o brasil</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum omnis quaerat modi nulla. Saepe, nihil maxime. Animi praesentium voluptates sequi ex laborum repellendus asperiores ipsum quisquam dicta! Alias, perferendis consequuntur!</p>
+            <aside>
+                <p>artigo escrio por jose da SILVA</p>
+            </aside>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvendo pelo CursoEmVideo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
