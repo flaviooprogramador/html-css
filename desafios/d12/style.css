@@ -73,6 +73,7 @@ section.normal{
 section.imagem{
     background-color: rgb(51, 51, 51);
     color: white;
+    background-attachment: fixed;
 
 }
 
@@ -96,6 +97,7 @@ section#img01{
 section#img02{
     background-image: url(../d12/imagens/background002.jpg);
     background-position: right center;
+    background-size: cover;
 }
 
 
