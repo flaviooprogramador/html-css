@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color:lightslategrey;
+        } 
+        
+
+        td.numero{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightslategrey;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: aqua;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: lightgray;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>tabelas grandes</h1>
+
+    <table>
+        <caption>populacao das Unidades federativas</caption>
+        <thead>
+                <tr>
+                    <th>estado</th>
+                    <th>população</th>     
+                </tr>
+            </thead>
+                <tr>
+                    <td>minas gerais</td>
+                    <td class="numero">21 168 791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="numero">17 264 943</td>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>sao paulo</td>
+                <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>minas gerais</td>
+                <td class="numero">586 521,123</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">564 760,427</td>
+            </tr>
+            <tr>
+                <td>mato grosso do sul</td>
+                <td class="numero">357 145,534</td>
+            </tr>
+            <tr>
+                <td>goias</td>
+                <td class="numero">340 203,329</td>
+            </tr>
+            <tr>
+                <td>maranhao</td>
+                <td class="numero">329 642,182</td>
+            </tr>
+            <tr>
+                <td>Rio grande do sul</td>
+                <td class="numero">281 707,156</td>
+            </tr>
+            <tr>
+                <td>tocantins</td>
+                <td class="numero">277 466,763</td>
+            </tr>
+            <tr>
+                <td>piaui</td>
+                <td class="numero">251 756,515</td>
+            </tr>
+            <tr>
+                <td>sao paulo</td>
+                <td class="numero">248 219,481	</td>
+            </tr>
+            <tr>
+                <td>rondonia</td>
+                <td class="numero">237 765,24	</td>
+            </td>
+           <tr>
+                <td>Roraima </td>
+                <td class="numero">223 644,527</td>
+           </tr>
+           <tr>
+                <td>parana</td>
+                <td  class="numero">199 298,979</td>
+           </tr>
+           <tr>
+                <td>Acre</td>
+                <td class="numero">164 123,964</td>
+           </tr>
+           <tr>
+            <td>ceara</td>
+            <td class="numero">148 894,441</td>
+           </tr>
+           <tr>
+            <td>Amapa</td>
+            <td class="numero">142 470,762</td>
+           </tr>
+           <tr>
+            <td>pernambuco</td>
+            <td class="numero">98 067,881</td>
+           </tr>
+           <tr>
+            <td>santa catarina</td>
+            <td class="numero">95 730,684	</td>
+           </tr>
+           <tr>
+            <td>paraiba</td>
+            <td class="numero">56 467,242	</td>
+           </tr>
+           <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="numero">52 809,602</td>
+           </tr>
+           <tr>
+            <td>Espirito Santo</td>
+            <td class="numero">46 074,447</td>
+           </tr>
+           <tr>
+            <td>Rio de Janeiro</td>
+            <td class="numero">43 750,427</td>
+           </tr>
+           <tr>
+            <td>Alagoas</td>
+            <td class="numero">27 843,295	</td>
+           </tr>
+           <tr>
+            <td>Sergipe</td>
+            <td class="numero"> 21 925,424</td>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="numero">5 760,783	</td>
+            </tr>
+            
+           </tr>
+           
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>total de habitantes</th>
+                <td class="numero">0000</td>
+            </tr>
+        
+        </tfoot>
+    </table>
+</body>
+</html>
