@@ -19,18 +19,63 @@
             font-weight: bolder;
             padding: 8px;
          }
+         th,td{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 8px;
+         }
 
+         col.cnome{
+            background-color: rgb(176, 158, 240);
+         }
     </style>
 </head>
 <body>
     <table>
+
+        <colgroup>
+        <col class="cnome">
+        </colgroup>
+
+
+        
         <caption> cadastro </caption>
         <tr>~
-            <th>Nome</th>
+            <th class="cnome">Nome</th>
             <th>Sexo</th>
             <th>Idade</th>
             <th>Profissao</th>
         </tr>
+        <tr>
+            <th>Ana maria</th>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <th>Claudio</th>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <th>Gustavo</th>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <th>Hélio</th>
+            <td>M</td>
+            <td>19</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <th>Otavio</th>
+            <td>F</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+
     </table>
 </body>
 </html>
