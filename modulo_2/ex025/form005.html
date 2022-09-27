@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        legend{
+            text-align: center;
+        }
+        fieldset{
+            height: 150px;
+            width: 200px;
+        }
+
+        fieldset#sexo{
+            height: 50px;
+            width: 200px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="formulario.php" method="get" autocomplete="on">
+        <fieldset id="sexo">
+            <legend>SEXO</legend>
+            <input type="radio" name="sexo" id="isxamas"> <label for="isxamas">Masculino</label>
+            <input type="radio" name="sexo" id="isxfem"><label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esba" id="iesba"> <label for="iesba">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut"> Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tenis</label> <br>
+            <input type="checkbox" name="eshand" id="ieshand"> <label for="ieshand">Handebol </label><br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
