@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/*
+-------------------------
+TYPICAL DEVICE BREAKPOINTS 
+-------------------------
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+
+*/
+
+
+
+
+@media print{
+
+
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    main{
+        width: 100vw;
+        border: 2px solid black;
+    }
+
+
+
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: block;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+
+    main::after{
+        content: 'essa imprensão foi feita pelo aluno do cursoEmvideo Flavio de oliveira';
+        text-decoration: overline;
+        
+    }
+     
+}
+
+ 
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+        }
+        img#phone{
+            display: none;
+        }
+        img#tablet{
+            display: block;
+        }
+        img#print{
+            display: none;
+        }
+        img#pc{
+            display: none;
+        }
+        img#tv{
+            display: none;
+        }
+        
+}
+    
+
+
+ 
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+   
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: block;
+    }
+    img#tv{
+        display: none;
+    }
+    main{
+        width: 700px;
+       
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: block;
+    }
+    
+    main{
+        width: 900px;
+    }
+
+}
